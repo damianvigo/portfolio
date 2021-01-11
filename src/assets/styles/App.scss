@@ -1,5 +1,79 @@
-body {
+:root {
+  --font-rale:'Raleway', sans-serif;
+	--size-300: 300;
+	--size-400: 400;
+	--size-700: 700;
+	--size-900: 900;
+  --primary-color: #fff;
+  --secondary-color: #1f1f1f;
+  --background-color: #f2f2f2;
+  --soft-shadow: 10px 10px 20px rgba(248, 248, 248, 0.16);
+  --text-color: #333;
+  --text-color-night: #eee;
+  --javascript-color: #f7df1e;
+  --color-boton: #367edf;
+  --modal-color: rgba(34, 34, 34, .85);
+  --container-lg: 1200px;
+  --container-md: 992px;
+  --container-sm: 500px;
+  --form-ok-color: #4caf50;
+  --form-error-color: #f44336;
+}
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  background-color: #333;
-  color: #fff;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-rale);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+  text-align: center;
+  font-weight: var(--size-900);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.none {
+  display: none;
+}
+
+.filter {
+  visibility: hidden;
+  opacity: 0;
+  order: 1;
+}
+
+.fix-sticky {
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  height: 80px;
+  background-color: #666;
 }

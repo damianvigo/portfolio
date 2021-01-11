@@ -1,0 +1,67 @@
+.footer {
+  width: 100%;
+  min-width: 320px;
+  margin: 5rem 0;
+  transition: 0.3s ease all;
+}
+
+.footer__social-network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer__fb,
+.footer__platzi,
+.footer__github {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  color: #fff;
+  margin: 1.25rem;
+  text-align: center;
+  border-radius: 6.25rem;
+  transition: 0.3s ease all;
+}
+
+.footer__fb i,
+.footer__platzi i,
+.footer__github i {
+  font-size: 2.5rem;
+  line-height: 5.5rem;
+}
+
+.footer__fb {
+  background-color: #3b5998;
+}
+
+.footer__platzi {
+  background-color: #6cc644;
+}
+
+.footer__github {
+  background-color: #000;
+}
+
+.footer__author {
+  font-size: 2rem;
+  font-weight: var(--size-400);
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.footer__container-icon a:hover {
+  animation: icon 0.5s ease;
+  color: var(--primary-color);
+}
+
+@keyframes icon {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    transform: rotate3d(0, 1, 0, 360deg) /* y - x - z */
+  }
+}
