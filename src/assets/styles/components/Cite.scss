@@ -1,0 +1,28 @@
+/* Cita */
+.cite-container {
+  width: 100%;
+  min-width: 320px;
+}
+
+.cite-container__cite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://i.ibb.co/rkK6wQn/connect-background-white.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300px;
+}
+
+.cite-container__davinci {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-weight: var(--size-400);
+  text-align: center;
+}
+
+body.dark .cite-container__davinci {
+  color: var(--text-color);
+}

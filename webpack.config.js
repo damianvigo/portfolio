@@ -23,10 +23,10 @@ module.exports = {
       {
         test: /\.html$/,
         use: [
-	{
-          loader: 'html-loader',
-        },
-	],
+          {
+            loader: 'html-loader',
+          },
+        ],
       },
       {
         test: /\.(s*)css$/,
@@ -36,6 +36,26 @@ module.exports = {
           },
           'css-loader',
           'sass-loader',
+        ],
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: { name: 'assets/[hash].[ext]' },
+          },
+        ],
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-url-loader',
+            options: {
+              limit: 10000,
+            },
+          },
         ],
       },
     ],
