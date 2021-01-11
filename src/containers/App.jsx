@@ -1,26 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Router } from '@reach/router';
+/* import { Helmet } from 'react-helmet'; */
+
 /* Styles */
 import '../assets/styles/App.scss';
 
-/* Components */
-import Header from '../components/Header';
-import HeroImage from '../components/HeroImage';
-import AboutMe from '../components/AboutMe';
-import Buttons from '../components/Buttons';
-import Cite from '../components/Cite';
-import LastProyects from '../components/LastProyects';
-import Footer from '../components/Footer';
+import Layout from '../components/Layout';
+import Home from '../pages/Home';
+import Proyects from '../pages/Proyects';
 
-const App = () => (
-  <div className='App'>
-    <Header />
-    <Buttons />
-    <HeroImage />
-    <AboutMe />
-    <Cite />
-    <LastProyects />
-    <Footer />
-  </div>
-);
+const App = () => {
+
+  return (
+    <Layout>
+      <Router>
+        <Home path='/' />
+        <Proyects path='/proyectos' />
+      </Router>
+    </Layout>
+  );
+};
 
 export default App;

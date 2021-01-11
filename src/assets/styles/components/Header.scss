@@ -34,6 +34,10 @@ body.dark .header.sticky {
   color: var(--primary-color);
 }
 
+[aria-current] {
+  color: var(--javascript-color);
+}
+
 .header__menu-ul {
   display: flex;
   flex-direction: column;
@@ -92,3 +96,6 @@ body.dark .header.sticky {
   background: none;
   color: var(--primary-color);
 }
+
+
+@import '../Media.scss'; 

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from '@reach/router';
+
 import '../assets/styles/components/LastProyects.scss';
 import petgram from '../assets/static/img/petgram.jpg';
 import portfolioDv from '../assets/static/img/portfolio-dv.jpg';
@@ -50,9 +52,9 @@ const LastProyects = () => {
         </section>
       </section>
       <button className='container-button' type='button'>
-        <a href='./pages/proyectos.html' className='button'>
+        <Link to='/proyectos' className='button'>
           No presionar
-        </a>
+        </Link>
       </button>
     </>
   );

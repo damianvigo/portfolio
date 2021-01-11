@@ -1,10 +1,22 @@
-import React, { Fragment } from 'react';
+import React, { useEffect } from 'react';
 import '../assets/styles/components/Buttons.scss';
+
+import darkMode from '../containers/darkMode';
+import hamburguerMenu from '../containers/hamburguerMenu';
+import scrollTopButton from '../containers/scrollTopButton';
+import stickyFooter from '../containers/stickyFooter';
 
 const Buttons = () => {
 
+  useEffect(() => {
+    darkMode('#switch');
+    stickyFooter('.header');
+    hamburguerMenu('.panel-btn', '.panel', '.panel__menu-a');
+    scrollTopButton('.scroll-top-btn');
+  }, []);
+
   return (
-    <Fragment>
+    <>
       <aside className='panel'>
         <nav className='panel__menu'>
           <a className='panel__menu-a' href='../pages/proyectos.html'>Proyectos</a>
@@ -28,7 +40,7 @@ const Buttons = () => {
         </div>
         <p className='overlay__description' />
       </section>
-    </Fragment>
+    </>
   );
 };
 
