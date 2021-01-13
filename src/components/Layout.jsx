@@ -1,20 +1,20 @@
 import React from 'react';
 /* import { Helmet } from 'react-helmet'; */
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from './Header';
+import Footer from './Footer';
 import Buttons from './Buttons';
 
 const Layout = ({ children }) => {
 
   return (
     <>
-      <div className='App'>
-        <Header />
-        <Buttons />
+      <Header />
+      <Buttons />
+      <main>
         {children}
-        <Footer />
-      </div>
+      </main>
+      <Footer />
     </>
   );
 };
