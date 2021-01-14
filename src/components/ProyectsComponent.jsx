@@ -74,7 +74,7 @@ const ProyectsComponent = () => {
               El 50% del tráfico en internet se realiza
               desde dispositivos móviles, convirtiendo una prioridad desarrollar para smartphones, tablets y laptops.
           Desde el wireframe a mobile first con buenas prácticas. </p>
-            <a href='https://github.com/damianvigo/svelte' target='_blank' rel='noopener' title='github'
+            <a href='https://github.com/damianvigo/batatabit' target='_blank' rel='noopener' title='github'
               className='card-code'>Código del proyecto</a>
           </article>
           <article className='card'>
