@@ -11,7 +11,6 @@ const Header = () => {
         <ul className='header__menu-ul'>
           <li className='header__menu-li'><Link className='header__menu-a' to='/proyectos'>Proyectos</Link></li>
           <li className='header__menu-li'><a className='header__menu-a' href='#sobre-mi'>Sobre Mi</a></li>
-          <li className='header__menu-li'><Link className='header__menu-a' to='/pages/notas'>Notas</Link></li>
           <li className='header__menu-li'><Link className='header__menu-a' to='/contacto'>Hablemos</Link></li>
         </ul>
       </nav>

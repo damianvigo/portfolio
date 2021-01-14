@@ -13,8 +13,8 @@ const Buttons = () => {
   useEffect(() => {
     darkMode('#switch');
     stickyFooter('.header');
-    hamburguerMenu('.panel-btn', '.panel', '.panel__menu-a');
     scrollTopButton('.scroll-top-btn');
+    hamburguerMenu('.panel-btn', '.panel', '.panel__menu-a');
   }, []);
 
   return (

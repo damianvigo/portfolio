@@ -14,6 +14,11 @@ body.dark h1 {
   color: var(--text-color-night);
 }
 
+.wrapped-card {
+  background-color: var(--secondary-color);
+  padding: 5rem 0;
+}
+
 .grid-fluid {
   margin: 1rem auto;
   max-width: 90%;
@@ -123,7 +128,7 @@ body.dark .filter-title {
   background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid var(--primary-color);
   border-radius: 50px;
-  padding: 1rem;
+  padding: .5rem;
   outline: 0;
 }
 

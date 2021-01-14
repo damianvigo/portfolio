@@ -33,7 +33,8 @@ const LastProyects = () => {
 
           <article className='last-proyects-container-fluid flex-order'>
             <h2 className='last-proyects-container-fluid__title text-right'>Portfolio</h2>
-            <p className='last-proyects-container-fluid__description text-right'>Diseño Responsive en HTML CSS y vanilla Javascript. Slider y modal hecho solo con CSS.</p>
+            <p className='last-proyects-container-fluid__description text-right'>
+              Diseño Responsive en HTML CSS y vanilla Javascript. <br /> Slider y modal construido solo con CSS.</p>
           </article>
           <article className='last-proyects-container-fluid'>
             <a className='last-proyects-container-fluid-link' href='https://portfolio-dv.netlify.app' target='_blank'
