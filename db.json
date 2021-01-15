@@ -1,0 +1,70 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "link": "https://damian-vigo-batatabit.vercel.app",
+      "img": "https://i.ibb.co/zRX6dJz/batatabit.jpg",
+      "title": "batatabit",
+      "alt": "pagina web batatabit",
+      "card_title": "Maquetación",
+      "description": "El 50% del tráfico en internet se realiza desde dispositivos móviles, convirtiendo una prioridad desarrollar para smartphones, tablets y laptops. Desde el wireframe a mobile first con buenas prácticas.",
+      "github": "https://github.com/damianvigo/batatabit",
+      "code": "Código del proyecto"
+    },
+    {
+      "id": 2,
+      "link": "https://pugstagram-damian-vigo.netlify.app",
+      "img": "https://i.ibb.co/cCmMGK8/svelte-pugstagram.jpg",
+      "title": "pugstagram",
+      "alt": "Una red social hecha en Svelte",
+      "card_title": "Svelte",
+      "description": "Web app construida con el framework de javascript Svelte.",
+      "github": "https://github.com/damianvigo/batatabit",
+      "code": "Código del proyecto"
+    },
+    {
+      "id": 3,
+      "link": "https://tech-news-damian-vigo.web.app",
+      "img": "https://i.ibb.co/BKJqpZs/tech.jpg",
+      "title": "tech-news",
+      "alt": "Un portal de noticias de tecnología hecho con HTML5, CSS3 y JavaScript",
+      "card_title": "Portal de noticias geek",
+      "description": "Diseño Responsive. Construido con HTML, CSS(SASS) y vanilla Javascript.",
+      "github": "https://github.com/damianvigo/tech-news",
+      "code": "Código del proyecto"
+    },
+    {
+      "id": 4,
+      "link": "https://cafe-damian-vigo.netlify.app",
+      "img": "https://i.ibb.co/Gcd3Thx/restaurante-ddv.jpg",
+      "title": "restaurante",
+      "alt": "Un sitio web de un Restaurante creado con html, css y javascript",
+      "card_title": "Restaurante",
+      "description": "Diseño Responsive. Construido con HTML CSS(SASS) Javascript y JQuery.",
+      "github": "https://github.com/damianvigo/restaurante-sitio-web",
+      "code": "Código del proyecto"
+    },
+    {
+      "id": 5,
+      "link": "https://app-manager-ddv.herokuapp.com",
+      "img": "https://i.ibb.co/7zK5Wg7/app-manager.jpg",
+      "title": "app-manager",
+      "alt": "Una app en react para situar jugadores en una cancha de futbol",
+      "card_title": "App Manager",
+      "description": "Web app en react con Redux.",
+      "github": "https://github.com/damianvigo/javascript/tree/master/otros/app-manager",
+      "code": "Código del proyecto"
+    },
+    {
+      "id": 6,
+      "link": "https://petgram.damianvigo.vercel.app",
+      "img": "https://i.ibb.co/J3VdQGc/petgram.jpg",
+      "title": "petgram",
+      "alt": "Red social de animales llamada Petgram",
+      "card_title": "Pets App",
+      "description": "Web app con react.",
+      "github": "https://github.com/damianvigo/javascript/tree/master/react-avanzado/react-avanzado",
+      "code": "Código del proyecto"
+    }
+  ]
+}

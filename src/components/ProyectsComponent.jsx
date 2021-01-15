@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import '../assets/styles/components/Proyects.scss';
 
@@ -26,6 +26,7 @@ import gatoLineasPlanos from '../assets/static/img/gato-lineas-planos.jpg';
 import gatoPlanoBlancoYNegro from '../assets/static/img/gato-planos-blanco-negro.jpg';
 
 import searchFilters from '../containers/searchFilter';
+import Proyect from './Proyect';
 
 const ProyectsComponent = () => {
 
@@ -54,6 +55,19 @@ const ProyectsComponent = () => {
     searchFilters('.card-filter-input', '.cards-filter__card');
   });
 
+  const [dataProyects, setDataProyects] = useState([]);
+
+  useEffect(() => {
+    window.fetch('../../db.json')
+      .then(res => res.ok ? res.json() : Promise.reject(res))
+      .then(data => {
+        setDataProyects(data.cards);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <>
       <div className='fix-sticky'></div>
@@ -62,99 +76,15 @@ const ProyectsComponent = () => {
       </div>
       <div className='wrapped-card'>
         <section className='container-card grid-fluid'>
-          <article className='card'>
-            <a className='card__card-link' href='https://damian-vigo-batatabit.vercel.app' target='_blank' rel='noopener'>
-              <figure className='card__card-figure'>
-                <img loading='lazy' className='card__card-img' src={batatabit} loading='lazy'
-                  alt='pagina web batatabit' title='batatabit' />
-              </figure>
-            </a>
-            <h2 className='card-title'>Maquetación</h2>
-            <p className='card-description'>
-              El 50% del tráfico en internet se realiza
-              desde dispositivos móviles, convirtiendo una prioridad desarrollar para smartphones, tablets y laptops.
-          Desde el wireframe a mobile first con buenas prácticas. </p>
-            <a href='https://github.com/damianvigo/batatabit' target='_blank' rel='noopener' title='github'
-              className='card-code'>Código del proyecto</a>
-          </article>
-          <article className='card'>
-            <a className='card__card-link' href='https://pugstagram-damian-vigo.netlify.app' target='_blank' rel='noopener'>
-              <figure className='card__card-figure'>
-                <img loading='lazy' className='card__card-img' src={svelte} loading='lazy'
-                  alt='Una red social hecha en Svelte' title='pugstagram' />
-              </figure>
-            </a>
-            <h2 className='card-title'>Svelte</h2>
-            <p className='card-description'>
-              Web app construida con el framework de javascript Svelte</p>
-            <a href='https://github.com/damianvigo/svelte' target='_blank' rel='noopener' title='github'
-              className='card-code'>Código del proyecto</a>
-          </article>
-          <article className='card'>
-            <a className='card__card-link' href='https://tech-news-damian-vigo.web.app' target='_blank' rel='noopener'>
-              <figure className='card__card-figure'>
-                <img loading='lazy' className='card__card-img' src={tech} loading='lazy' title='tech-news'
-                  alt='Un portal de noticias de tecnología hecho con HTML5, CSS3 y JavaScript' />
-              </figure>
-            </a>
-            <h2 className='card-title'>Portal de noticias geek</h2>
-            <p className='card-description'>Diseño Responsive. Construido con HTML, CSS(SASS) y vanilla Javascript</p>
-            <a href='https://github.com/damianvigo/tech-news' className='card-code' title='github' target='_blank'
-              rel='noopener'>Código del proyecto</a>
-          </article>
-          <article className='card'>
-            <a className='card__card-link' href='https://cafe-damian-vigo.netlify.app' target='_blank' rel='noopener'>
-              <figure className='card__card-figure'>
-                <img loading='lazy' className='card__card-img' src={restaurante}
-                  alt='Un sitio web de un Restaurante creado con html, css y javascript' title='restaurante' />
-              </figure>
-            </a>
-            <h2 className='card-title'>Restaurante</h2>
-            <p className='card-description'>Diseño Responsive. Construido con HTML
-          CSS(SASS) Javascript y JQuery</p>
-            <a href='https://github.com/damianvigo/restaurante-sitio-web' title='github' target='_blank' rel='noopener'
-              className='card-code'>Código del proyecto</a>
-          </article>
-          <article className='card'>
-            <a className='card__card-link' href='https://app-manager-ddv.herokuapp.com' target='_blank' rel='noopener'>
-              <figure className='card__card-figure'>
-                <img loading='lazy' className='card__card-img' src={manager}
-                  alt='Una app en react para situar jugadores en una cancha de futbol' title='app-manager' />
-              </figure>
-            </a>
-            <h2 className='card-title'>App Manager</h2>
-            <p className='card-description'>Web app en react con Redux</p>
-            <a href='https://github.com/damianvigo/javascript/tree/master/otros/app-manager' title='github' target='_blank'
-              rel='noopener' className='card-code'>Código del proyecto</a>
-          </article>
-          <article className='card'>
-            <a className='card__card-link' target='_blank' rel='noopener' href='https://movies-react-omdb.netlify.app'>
-              <figure className='card__card-figure'>
-                <img loading='lazy' className='card__card-img' src={movieapp}
-                  alt='Buscador de peliculas online' title='movie-app' />
-              </figure>
-            </a>
-            <h2 className='card-title'>Movie App</h2>
-            <p className='card-description'>Web app en react con la API de OMDb (The Open Movie Database)</p>
-            <a href='https://github.com/damianvigo/movie-app' title='github' target='_blank' rel='noopener'
-              className='card-code'>Código del proyecto</a>
-          </article>
-          <article className='card'>
-            <a target='_blank' rel='noopener' className='card__card-link' href='https://petgram.damianvigo.vercel.app'>
-              <figure className='card__card-figure'>
-                <img title='petgram' loading='lazy' className='card__card-img' src={petgram}
-                  alt='Red social de animales llamada Petgram' />
-              </figure>
-            </a>
-            <h2 className='card-title'>Pets App</h2>
-            <p className='card-description'>Web app con react</p>
-            <a href='https://github.com/damianvigo/javascript/tree/master/react-avanzado/react-avanzado' title='github'
-              target='_blank' rel='noopener' className='card-code'>Código del proyecto</a>
-          </article>
+          {
+            dataProyects.map((proyect) => (
+              <Proyect key={proyect.id} {...proyect} />
+            ))
+          }
         </section>
       </div>
 
-      <section className='container-filter'>
+      {/*  <section className='container-filter'>
         <article className='search-container'>
           <h2 className='filter-title'>Filtro de búsqueda</h2>
           <input type='search' id='buscar' placeholder='Buscar por ej: React' className='card-filter-input' />
@@ -276,7 +206,7 @@ const ProyectsComponent = () => {
             <figcaption className='cards-filter__figcaption'>Diseño</figcaption>
           </figure>
         </article>
-      </section>
+      </section> */}
     </>
   );
 

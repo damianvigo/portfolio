@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProyectsComponent from '../Components/ProyectsComponent';
+import ProyectsComponent from '../components/ProyectsComponent';
 
 const Proyects = () => {
 
@@ -8,4 +8,5 @@ const Proyects = () => {
     <ProyectsComponent />
   );
 };
+
 export default Proyects;
